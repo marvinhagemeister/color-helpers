@@ -1,5 +1,5 @@
 {
-  "name": "color-utils",
+  "name": "color-helpers",
   "version": "1.0.0",
   "description": "Tiny helper library for color operations or conversions",
   "typings": "dist/index.d.ts",

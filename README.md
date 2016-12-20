@@ -7,13 +7,13 @@ Tiny helper library for color operations or conversions.
 ## Installation
 
 ```bash
-npm install color-utils
+npm install color-helpers
 ```
 
 Or if you are using yarn:
 
 ```bash
-yarn add color-utils
+yarn add color-helpers
 ```
 
 ## API
