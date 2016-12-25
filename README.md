@@ -18,14 +18,12 @@ yarn add color-helpers
 
 ## API
 
-### `rgbToHex(r, g, b)`
+The following conversions are supported:
 
-Convert RGB color to hex.
-
-### `hexToRgb(hex)`
-
-Convert hex color string to RGB. Supports both shorthand `fff` and standard notation `ffffff`.
-Leading `#` is also supported, like: `#000`.
+- `rgb` ⟷ `hex`
+- `hsv` ⟷ `hsl`
+- `hsv` ⟷ `rgb`
+- `hsl` ⟷ `rgb`
 
 ### `shade(color, percentage)`
 
