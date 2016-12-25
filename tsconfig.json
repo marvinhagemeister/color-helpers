@@ -6,7 +6,7 @@
     "sourceMap": true,
     "pretty": true,
     "declaration": false,
-    "outDir": "dist/"
+    "outDir": "lib/cjs/"
   },
   "exclude": [
     "node_modules"
