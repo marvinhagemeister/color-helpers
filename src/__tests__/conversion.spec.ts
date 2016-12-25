@@ -44,7 +44,7 @@ describe("hslToHsv", () => {
 });
 
 describe("hsvToRgb", () => {
-  it("should convert hsv to hsl", () => {
+  it("should convert hsv to rgb", () => {
     t.deepEqual(hsvToRgb(1, 0, 0), [0, 0, 0]);
     t.deepEqual(hsvToRgb(0, 1, 1), [255, 0, 0]);
     t.deepEqual(hsvToRgb(0, 0, 1), [255, 255, 255]);
@@ -52,7 +52,7 @@ describe("hsvToRgb", () => {
 });
 
 describe("rgbToHsv", () => {
-  it("should convert hsv to hsl", () => {
+  it("should convert rgb to hsv", () => {
     t.deepEqual(rgbToHsv(255, 0, 0), [0, 1, 1]);
     t.deepEqual(rgbToHsv(128, 255, 20), [180, .92, 1]);
     t.deepEqual(rgbToHsv(0, 0, 255), [240, 1, 1]);
