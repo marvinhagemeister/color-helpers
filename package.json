@@ -19,13 +19,13 @@
   "dependencies": {},
   "devDependencies": {
     "@types/chai": "^3.4.34",
-    "@types/mocha": "^2.2.33",
+    "@types/mocha": "^2.2.34",
     "chai": "^3.5.0",
     "mocha": "^3.2.0",
     "nyc": "^10.0.0",
     "rimraf": "^2.5.4",
-    "ts-node": "^1.7.0",
-    "tslint": "^4.0.2",
+    "ts-node": "^1.7.2",
+    "tslint": "^4.2.0",
     "typescript": "^2.1.4"
   },
   "nyc": {
