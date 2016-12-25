@@ -9,3 +9,4 @@ src/
 .gitignore
 tsconfig.json
 tslint.json
+rollup.config.js
