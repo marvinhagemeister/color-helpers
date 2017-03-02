@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.2.2
+
+- Update typescript definitions files to show doc comments for overloads
+
 ## 1.2.1
 
 - Compile to ES5, because most toolchains ignore `node_modules`
