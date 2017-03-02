@@ -28,10 +28,12 @@ declare module "color-helpers" {
    */
   export function hslToRgb(h: number, s: number, l: number): number[];
 
-  /** Darken or lighten a hex or rgb color. Percentage range is `-1.0 - 1.0` */
+  /** Darken or lighten a hex color. Percentage range is `-1.0 - 1.0` */
   export function shade(color: string, percent: number): string;
+  /** Darken or lighten a rgb color. Percentage range is `-1.0 - 1.0` */
   export function shade(color: number[], percent: number): number[];
-  /** Blend two hex or rgb colors together. Percentage range is from `0 - 1` */
+  /** Blend two hex colors together. Percentage range is from `0 - 1` */
   export function blend(color1: string, color2: string, percent: number): string;
+  /** Blend two rgb colors together. Percentage range is from `0 - 1` */
   export function blend(color1: number[], color2: number[], percent: number): number[];
 }
