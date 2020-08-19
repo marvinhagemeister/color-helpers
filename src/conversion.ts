@@ -63,7 +63,7 @@ export function hsvToRgb(h: number, s: number, v: number) {
   const q = v * (1 - f * s);
   const t = v * (1 - (1 - f) * s);
 
-  let r, g, b;
+  let r = 0, g = 0, b = 0;
   switch (i % 6) {
     case 0: r = v, g = t, b = p; break;
     case 1: r = q, g = v, b = p; break;
@@ -104,7 +104,7 @@ function rgbToHslOrHsv(r: number, g: number, b: number, mode: COLOR_MODES) {
   const max = Math.max(r, g, b);
   const min = Math.min(r, g, b);
 
-  let h, s;
+  let h = 0, s = 0;
   if (max === min) {
     h = s = 0; // achromatic
   } else {
@@ -143,7 +143,7 @@ function rgbToHslOrHsv(r: number, g: number, b: number, mode: COLOR_MODES) {
  * *Hue*: 0 - 360, *Saturation*: 0 - 1, *Lightness*: 0 - 1
  */
 export function hslToRgb(h: number, s: number, l: number) {
-  let r, g, b;
+  let r = 0, g = 0, b = 0;
 
   if (s === 0) {
     r = g = b = l; // achromatic

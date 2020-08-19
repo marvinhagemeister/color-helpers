@@ -48,4 +48,5 @@ jspm_packages
 
 # Compiled files
 dist/
-lib/
+
+.vscode/

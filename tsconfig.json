@@ -1,17 +1,9 @@
 {
   "compilerOptions": {
     "module": "commonjs",
-    "target": "es5",
-    "noImplicitAny": true,
-    "sourceMap": true,
-    "pretty": true,
-    "declaration": false,
-    "outDir": "lib/cjs/"
-  },
-  "exclude": [
-    "node_modules"
-  ],
-  "files": [
-    "./src/index.ts"
-  ]
+    "moduleResolution": "node",
+    "noUnusedLocals": true,
+    "strict": true,
+    "skipLibCheck": true
+  }
 }

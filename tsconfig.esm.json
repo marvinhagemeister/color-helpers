@@ -1,0 +1,14 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "module": "ESNext",
+    "declaration": true,
+    "declarationDir": "./dist/types/",
+    "outDir": "./dist/es/",
+    "target": "ES5",
+    "sourceMap": true,
+  },
+  "files": [
+    "./src/index.ts"
+  ]
+}
