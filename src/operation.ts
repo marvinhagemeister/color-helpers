@@ -1,5 +1,5 @@
 // Shade functions taken from:
-// http://stackoverflow.com/questions/5560248/programmatically-lighten-or-darken-a-hex-color-or-rgb-and-blend-colors
+// https://stackoverflow.com/questions/5560248/programmatically-lighten-or-darken-a-hex-color-or-rgb-and-blend-colors
 
 function shadeHexColor(color: string, percent: number) {
   if (color[0] === "#") {
