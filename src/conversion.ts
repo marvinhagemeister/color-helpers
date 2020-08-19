@@ -40,11 +40,7 @@ export function hsvToHsl(h: number, s: number, v: number) {
   l /= 2;
   s = isNaN(s) ? 0 : s;
 
-  return [
-    +h.toFixed(2),
-    +s.toFixed(2),
-    +l.toFixed(2)
-  ];
+  return [h, s, l];
 }
 
 /** Convert hsl to hsv. */
@@ -56,11 +52,7 @@ export function hslToHsv(h: number, s: number, l: number) {
   s = (2 * s) / (l + s);
   s = isNaN(s) ? 0 : s;
 
-  return [
-    +h.toFixed(2),
-    +s.toFixed(2),
-    +v.toFixed(2)
-  ];
+  return [h, s, v];
 }
 
 /** Convert hsv color to rgb. */
@@ -85,11 +77,7 @@ export function hsvToRgb(h: number, s: number, v: number) {
   g = Math.abs(Math.round(g * 255));
   b = Math.abs(Math.round(b * 255));
 
-  return [
-    +r.toFixed(2),
-    +g.toFixed(2),
-    +b.toFixed(2)
-  ];
+  return [r, g, b];
 }
 
 /**
@@ -146,11 +134,7 @@ function rgbToHslOrHsv(r: number, g: number, b: number, mode: COLOR_MODES) {
     ? max
     : (max + min) / 2;
 
-  return [
-    +h.toFixed(2),
-    +s.toFixed(2),
-    +l.toFixed(2)
-  ];
+  return [h, s, l];
 }
 
 /**

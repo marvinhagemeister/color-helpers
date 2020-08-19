@@ -1,5 +1,9 @@
 # Changelog
 
+## next
+
+- Fix precision loss due to rounding in conversion functions
+
 ## 1.2.2
 
 - Update typescript definitions files to show doc comments for overloads

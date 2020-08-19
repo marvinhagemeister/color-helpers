@@ -29,7 +29,7 @@ describe("hexToRgb", () => {
 
 describe("hsvToHsl", () => {
   it("should convert hsv to hsl", () => {
-    t.deepEqual(hsvToHsl(204, .5, .29), [204, .33, .22]);
+    t.deepEqual(hsvToHsl(204, .5, .29), [204, .33333333333333337, .21749999999999997]);
     t.deepEqual(hsvToHsl(0, 1, 0), [0, 0, 0]);
     t.deepEqual(hsvToHsl(0, 0, 1), [0, 0, 1]);
   });
@@ -39,7 +39,7 @@ describe("hslToHsv", () => {
   it("should convert hsl to hsv", () => {
     t.deepEqual(hslToHsv(1, 0, 0), [1, 0, 0]);
     t.deepEqual(hslToHsv(0, 1, 0), [0, 0, 0]);
-    t.deepEqual(hslToHsv(204, .33, .22), [204, .5, .29]);
+    t.deepEqual(hslToHsv(204, .33, .22), [204, .4962406015037594, .29259999999999997]);
   });
 });
 
@@ -54,7 +54,7 @@ describe("hsvToRgb", () => {
 describe("rgbToHsv", () => {
   it("should convert rgb to hsv", () => {
     t.deepEqual(rgbToHsv(255, 0, 0), [0, 1, 1]);
-    t.deepEqual(rgbToHsv(128, 255, 20), [180, .92, 1]);
+    t.deepEqual(rgbToHsv(128, 255, 20), [180, 0.9215686274509804, 1]);
     t.deepEqual(rgbToHsv(0, 0, 255), [240, 1, 1]);
   });
 });
@@ -62,9 +62,9 @@ describe("rgbToHsv", () => {
 describe("rgbToHsl", () => {
   it("should convert rgb to hsl", () => {
     t.deepEqual(rgbToHsl(255, 0, 0), [0, 1, .5]);
-    t.deepEqual(rgbToHsl(128, 255, 20), [180, 1, .54]);
+    t.deepEqual(rgbToHsl(128, 255, 20), [180, 1, .5392156862745098]);
     t.deepEqual(rgbToHsl(0, 0, 255), [240, 1, .5]);
-    t.deepEqual(rgbToHsl(36, 39, 41), [204, .06, .15]);
+    t.deepEqual(rgbToHsl(36, 39, 41), [203.99999999999997, .06493506493506497, .15098039215686276]);
   });
 });
 
