@@ -1,8 +1,7 @@
-// Shade functions taken from:
-// https://stackoverflow.com/questions/5560248/programmatically-lighten-or-darken-a-hex-color-or-rgb-and-blend-colors
-
 import { hexToRgb, hslToRgb, rgbToHex, rgbToHsl } from "./conversion";
 
+// Shade functions taken from:
+// https://stackoverflow.com/questions/5560248/programmatically-lighten-or-darken-a-hex-color-or-rgb-and-blend-colors
 function shadeHexColor(color: string, percent: number) {
   if (color[0] === "#") {
     color = color.slice(1);
