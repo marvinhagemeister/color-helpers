@@ -1,5 +1,7 @@
 // Shade functions taken from:
-// http://stackoverflow.com/questions/5560248/programmatically-lighten-or-darken-a-hex-color-or-rgb-and-blend-colors
+// https://stackoverflow.com/questions/5560248/programmatically-lighten-or-darken-a-hex-color-or-rgb-and-blend-colors
+
+import { hexToRgb, hslToRgb, rgbToHex, rgbToHsl } from "./conversion";
 
 function shadeHexColor(color: string, percent: number) {
   if (color[0] === "#") {
@@ -28,11 +30,22 @@ function shadeRGBColor(R: number, G: number, B: number, percent: number) {
   return [R, G, B];
 }
 
+export interface ShadeOptions {
+  /** Always convert to HSL */
+  convertHSL?: boolean;
+}
+
 /** Darken or lighten a hex or rgb color. Percentage range is `-1.0` - `1.0` */
-export function shade(color: string, percent: number): string;
+export function shade(color: string, percent: number, options?: ShadeOptions): string;
 export function shade(color: number[], percent: number): number[];
-export function shade(color: string | number[], percent: number) {
+export function shade(color: string | number[], percent: number, options: ShadeOptions = {}) {
   if (typeof color === "string") {
+    if (options.convertHSL) {
+      const rgb = hexToRgb(color);
+      const hsl = rgbToHsl(rgb[0], rgb[1], rgb[2]);
+      const outRgb = hslToRgb(hsl[0], hsl[1], hsl[2] + percent)
+      return rgbToHex(outRgb[0], outRgb[1], outRgb[2]);
+    }
     return shadeHexColor(color, percent);
   }
 
