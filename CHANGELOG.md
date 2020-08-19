@@ -1,7 +1,8 @@
 # Changelog
 
-## next
+## 2.0.0
 
+- Add `convertHSL` option to `shade` to always convert to HSL
 - Fix precision loss due to rounding in conversion functions
 
 ## 1.2.2
