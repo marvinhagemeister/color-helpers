@@ -1,6 +1,6 @@
 {
   "name": "color-helpers",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Tiny helper library for color operations or conversions",
   "main": "dist/cjs/index.js",
   "module": "dist/es/index.js",
