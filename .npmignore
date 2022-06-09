@@ -1,12 +1,6 @@
-node_modules/
-.nyc_output/
-coverage/
-scripts/
 src/
+.github/*
 .editorconfig
-.npmignore
-.travis.yml
-.gitignore
-tsconfig.json
 tslint.json
-rollup.config.js
+tsconfig.*
+*.tgz
